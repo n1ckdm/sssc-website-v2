@@ -4,17 +4,22 @@
     <div class="container">
       <logo />
     </div>
+    <div class="container">
+      <Menu />
+    </div>
   </div>
 </template>
 
 <script>
 import Background from '~/components/Background.vue'
 import Logo from '~/components/Logo.vue'
+import Menu from '~/components/Menu.vue'
 
 export default {
   components: {
     Background,
-    Logo
+    Logo,
+    Menu
   }
 }
 </script>
@@ -24,7 +29,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .title {
