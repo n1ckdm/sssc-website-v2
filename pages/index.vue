@@ -62,7 +62,7 @@ export default {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: inline-block;
-  width: 250px;
+  width: 270px;
   padding: 8px;
   font-size: 2rem;
   border-radius: 10px;
@@ -72,6 +72,12 @@ export default {
   outline: none;
   text-decoration: none;
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .ghost-button:hover,
 .ghost-button:active {

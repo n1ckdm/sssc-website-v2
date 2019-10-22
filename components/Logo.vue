@@ -57,6 +57,12 @@ export default Vue.extend({
   margin-left: 15%;
   margin-right: 15%;
   color: #ffffff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media screen and (max-width: 1400px) {
