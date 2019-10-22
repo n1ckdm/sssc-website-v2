@@ -4,8 +4,11 @@
     <div class="container">
       <logo />
     </div>
-    <div class="container">
+    <div>
       <Menu />
+    </div>
+    <div class="container">
+      <a class="ghost-button" href="#">Let's Go Sailing!</a>
     </div>
   </div>
 </template>
@@ -29,6 +32,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .title {
@@ -51,5 +55,28 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+.ghost-button {
+  margin-top: 3rem;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: inline-block;
+  width: 250px;
+  padding: 8px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 </style>

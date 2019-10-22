@@ -48,13 +48,15 @@ export default Vue.extend({
 <style>
 .Logo {
   font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
   font-size: 8rem;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 10%;
   margin-left: 15%;
   margin-right: 15%;
-  color: #000000;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 1400px) {

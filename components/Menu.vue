@@ -140,6 +140,12 @@ span::after {
   transition: all 0.5s;
 }
 
+@media screen and (max-width: 850px) {
+  #nav a {
+    font-size: 1rem;
+  }
+}
+
 #nav a:hover {
   background: #357ffd;
 }
@@ -206,22 +212,22 @@ nav.visible li:last-child {
 }
 
 nav.visible li:first-child a {
-  line-height: 265vw !important;
-  text-indent: 15vw !important;
+  line-height: 295vw !important;
+  text-indent: 17vw !important;
 }
 
 nav.visible li:nth-child(2) a {
-  line-height: 200vw !important;
+  line-height: 220vw !important;
   text-indent: 17vw !important;
 }
 
 nav.visible li:nth-child(3) a {
-  line-height: 137vw !important;
+  line-height: 150vw !important;
   text-indent: 17vw !important;
 }
 
 nav.visible li:last-child a {
-  line-height: 70vw !important;
+  line-height: 80vw !important;
   text-indent: 12vw !important;
 }
 

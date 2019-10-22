@@ -30,7 +30,6 @@
   transform: translateX(-50%) translateY(-50%);
   background: url(~assets/sc_bg.jpg) no-repeat;
   background-size: cover;
-  filter: opacity(60%);
-  background-color: aliceblue;
+  background: rgba(0, 0, 0, 0);
 }
 </style>

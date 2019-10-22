@@ -28,7 +28,8 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Quicksand&display=swap'
+        href:
+          'https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap'
       }
     ]
   },
