@@ -26,6 +26,7 @@ collections:
     create: true
     slug: '{{slug}}'
     format: 'json'
+    identifier_field: name
     editor:
       preview: false
     fields:
