@@ -5,11 +5,17 @@
     </div>
     <nav id="nav">
       <ul>
-        <li class="shape-circle circle-one"><a href="#">Contact</a></li>
-        <li class="shape-circle circle-two"><a href="#">Blog</a></li>
-        <li class="shape-circle circle-three"><a href="#">Work</a></li>
+        <li class="shape-circle circle-one">
+          <nuxt-link to="#">About</nuxt-link>
+        </li>
+        <li class="shape-circle circle-two">
+          <nuxt-link to="#">News</nuxt-link>
+        </li>
+        <li class="shape-circle circle-three">
+          <nuxt-link to="#">Join</nuxt-link>
+        </li>
         <li class="shape-circle circle-five">
-          <a href="#">Home</a>
+          <nuxt-link to="/">Home</nuxt-link>
         </li>
       </ul>
     </nav>

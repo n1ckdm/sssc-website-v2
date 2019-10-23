@@ -8,7 +8,16 @@
       <Menu />
     </div>
     <div class="container">
-      <a class="ghost-button" href="#">Let's Go Sailing!</a>
+      <nuxt-link class="ghost-button" to="/">
+        Let's Go Sail!&nbsp;
+        <i class="material-icons">sentiment_satisfied_alt</i>
+      </nuxt-link>
+    </div>
+    <div class="container">
+      <nuxt-link class="ghost-button" to="/">
+        Member Area&nbsp;
+        <i class="material-icons">vpn_key</i>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -23,6 +32,13 @@ export default {
     Background,
     Logo,
     Menu
+  },
+  head() {
+    return {
+      script: [
+        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+      ]
+    }
   }
 }
 </script>
@@ -57,12 +73,16 @@ export default {
   padding-top: 15px;
 }
 
+.material-icons {
+  width: 24px;
+}
+
 .ghost-button {
   margin-top: 3rem;
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: inline-block;
-  width: 270px;
+  width: 310px;
   padding: 8px;
   font-size: 2rem;
   border-radius: 10px;
