@@ -6,9 +6,9 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'assets/content/blog'
+  - name: 'news'
+    label: 'News'
+    folder: 'assets/content/news'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     format: 'json'
@@ -19,3 +19,16 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'committee'
+    lable: 'Committee'
+    folder: 'assets/content/committee'
+    create: true
+    slug: '{{slug}}'
+    format: 'json'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Position', name: 'position', widget: 'string' }
+      - { label: 'Photo', name: 'photo', widget: 'image' }
