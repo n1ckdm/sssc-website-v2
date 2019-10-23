@@ -1,6 +1,24 @@
 # sssc-website
 
-> a new website for sssc
+> A new website for sssc
+
+# To do list:
+
+- [x] Get basic test site up and running
+- [x] Integrate NetlifyCMS
+- [x] Get front page up
+- [x] Setup routes
+- [ ] Create news template
+- [ ] Finish news page
+- [ ] Migrate news stories (2017 onwards)
+- [ ] Add committee members
+- [ ] Committee members page
+- [ ] About us page
+- [ ] New members sign up page
+- [ ] Create footer
+- [ ] Privacy notice
+- [ ] Add social media links
+- [ ] Check mobile integration
 
 ## Build Setup
 

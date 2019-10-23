@@ -8,16 +8,16 @@
       <Menu />
     </div>
     <div class="container">
-      <nuxt-link class="ghost-button" to="/">
+      <nuxt-link class="ghost-button" to="/join">
         Let's Go Sail!&nbsp;
         <i class="material-icons">sentiment_satisfied_alt</i>
       </nuxt-link>
     </div>
     <div class="container">
-      <nuxt-link class="ghost-button" to="/">
+      <a class="ghost-button" to="/">
         Member Area&nbsp;
         <i class="material-icons">vpn_key</i>
-      </nuxt-link>
+      </a>
     </div>
   </div>
 </template>

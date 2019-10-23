@@ -6,13 +6,13 @@
     <nav id="nav">
       <ul>
         <li class="shape-circle circle-one">
-          <nuxt-link to="#">About</nuxt-link>
+          <nuxt-link to="/about">About</nuxt-link>
         </li>
         <li class="shape-circle circle-two">
-          <nuxt-link to="#">News</nuxt-link>
+          <nuxt-link to="/news">News</nuxt-link>
         </li>
         <li class="shape-circle circle-three">
-          <nuxt-link to="#">Join</nuxt-link>
+          <nuxt-link to="/join">Join</nuxt-link>
         </li>
         <li class="shape-circle circle-five">
           <nuxt-link to="/">Home</nuxt-link>
