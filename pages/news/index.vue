@@ -1,20 +1,22 @@
 <template>
   <div>
     <Menu />
-    <ul>
-      <li v-for="(news, index) in newsItems" :key="index">
-        {{ news.title }}
-      </li>
-    </ul>
+    <NewsItem
+      v-for="(news, index) in newsItems"
+      :key="index"
+      :newsItem="news"
+    />
   </div>
 </template>
 
 <script>
 import Menu from '~/components/Menu.vue'
+import NewsItem from '~/components/NewsItem'
 
 export default {
   components: {
-    Menu
+    Menu,
+    NewsItem
   },
   computed: {
     newsItems() {
