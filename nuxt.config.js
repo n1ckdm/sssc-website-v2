@@ -60,7 +60,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     'nuxt-material-design-icons',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    'bootstrap-vue/nuxt'
   ],
   markdownit: {
     injected: true

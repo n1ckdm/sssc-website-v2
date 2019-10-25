@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="newslist">
     <Menu />
+    <h1>News</h1>
     <NewsItem
       v-for="(news, index) in newsItems"
       :key="index"

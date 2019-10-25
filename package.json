@@ -23,6 +23,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/markdownit": "^1.2.7",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "bootstrap-vue": "^2.0.4",
     "nuxt": "^2.0.0",
     "nuxt-material-design-icons": "^1.0.4"
   },
