@@ -9,7 +9,7 @@
 - [x] Get front page up
 - [x] Setup routes
 - [x] Create news template
-- [ ] Finish news page
+- [x] Finish news page
 - [ ] Migrate news stories (2017 onwards)
 - [ ] Add committee members
 - [ ] Committee members page

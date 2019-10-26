@@ -110,5 +110,6 @@ export default {
   background-color: #fff;
   color: #000;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  text-decoration: none;
 }
 </style>

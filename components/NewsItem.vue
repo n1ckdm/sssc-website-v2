@@ -12,7 +12,24 @@
         <p class="description">{{ newsItem.description }}</p>
       </div>
     </b-card>
-    <b-modal v-model="newsShow">Hello From Modal!</b-modal>
+    <b-modal
+      id="modal-xl modal-scrollable"
+      scrollable
+      v-model="newsShow"
+      size="xl"
+      :title="newsItem.title"
+    >
+      <template v-slot:modal-footer>
+        <button style="display:none;" />
+      </template>
+      <img class="main-img" :src="newsItem.image" />
+      <hr />
+      <div>
+        <p class="date">{{ date }}</p>
+        <p class="description">{{ newsItem.description }}</p>
+      </div>
+      <div class="markdown" v-html="$md.render(newsItem.body)"></div>
+    </b-modal>
   </div>
 </template>
 
@@ -69,5 +86,13 @@ export default {
 
 .description {
   font-style: italic;
+}
+
+.main-img {
+  width: 400px;
+}
+
+.markdown img {
+  width: 400px;
 }
 </style>

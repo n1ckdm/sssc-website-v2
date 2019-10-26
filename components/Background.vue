@@ -1,7 +1,7 @@
 <template>
   <div>
     <video
-      v-if="usevideo && !$device.isMobile"
+      v-if="showVideo"
       id="video-background"
       :poster="require('~/assets/sc_bg.jpg')"
       playsinline
@@ -21,6 +21,15 @@ const useVideoDefault = false
 export default {
   props: {
     usevideo: useVideoDefault
+  },
+  computed: {
+    showVideo() {
+      if (this.$props.usevideo) {
+        return this.$props.usevideo && !this.$device.isMobile
+      } else {
+        return false
+      }
+    }
   }
 }
 </script>

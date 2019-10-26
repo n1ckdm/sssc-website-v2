@@ -1,6 +1,6 @@
 <template>
   <div class="Logo">
-    {{ $device.isMobile }}
+    {{ title }}
   </div>
 </template>
 
