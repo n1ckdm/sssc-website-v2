@@ -49,7 +49,7 @@ export default Vue.extend({
 .Logo {
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
-  font-size: 8rem;
+  font-size: 7rem;
   justify-content: center;
   align-items: center;
   text-align: center;

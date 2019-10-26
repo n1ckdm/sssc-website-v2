@@ -19,6 +19,7 @@
 - [ ] Privacy notice
 - [ ] Add social media links
 - [ ] Check mobile integration
+- [ ] Setup Coacha
 
 ## Build Setup
 
