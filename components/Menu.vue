@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="menu">
     <div id="nav-action" class="bars">
       <span class="bar"> </span>
     </div>

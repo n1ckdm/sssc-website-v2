@@ -1,5 +1,5 @@
 <template>
-  <svg>
+  <svg viewBox="-50 -75 400 300">
     <polygon class="flag-tri" points="0,0, 300,100 0,200" />
     <polygon
       class="flag-mark"
@@ -10,7 +10,7 @@
 
 <style>
 svg {
-  margin-top: 1rem;
+  margin-top: -2.5rem;
   width: 310px;
   height: 210px;
 }
