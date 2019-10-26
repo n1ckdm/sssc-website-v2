@@ -52,6 +52,7 @@ collections:
   - name: "handbook_pdf"
     label: "Club Handbook"
     folder: "assets/content/handbook"
+    create: true
     media_library:
       config:
         multiple: false
@@ -64,6 +65,7 @@ collections:
   - name: "sailing_instructions_pdf"
     label: "Sailing Instructions"
     folder: "assets/content/sailing_instructions"
+    create: true
     media_library:
       config:
         multiple: false
