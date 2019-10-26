@@ -27,10 +27,40 @@ collections:
     create: true
     slug: '{{slug}}'
     format: 'json'
-    identifier_field: name
+    identifier_field: 'name'
     editor:
       preview: false
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Position', name: 'position', widget: 'string' }
       - { label: 'Photo', name: 'photo', widget: 'image' }
+
+  - name: 'membership'
+    label: 'Membership Fees'
+    folder: 'assets/content/membership'
+    create: true
+    slug: '{{slug}}'
+    format: 'json'
+    identifier_field: 'type'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Membership Type', name: 'type', widget: 'string' }
+      - { label: 'Annual Price', name: 'price_year', widget: 'number' }
+      - { label: 'Half Year Price', name: 'price_half', widget: 'number' }
+
+  - name: "handbook_pdf"
+    label: "Club Handbook"
+    widget: "file"
+    default: "assets/content/handbook.pdf"
+    media_library:
+      config:
+        multiple: true
+
+  - name: "sailing_instructions_pdf"
+    label: "Sailing Instructions"
+    widget: "file"
+    default: "assets/content/sailing_instructions.pdf"
+    media_library:
+      config:
+        multiple: true
