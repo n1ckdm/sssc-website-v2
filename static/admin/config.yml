@@ -63,7 +63,7 @@ collections:
 
   - name: "sailing_instructions_pdf"
     label: "Sailing Instructions"
-    folder: "assets/content/sailing_instructions.pdf"
+    folder: "assets/content/sailing_instructions"
     media_library:
       config:
         multiple: false
