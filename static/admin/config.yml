@@ -51,16 +51,24 @@ collections:
 
   - name: "handbook_pdf"
     label: "Club Handbook"
-    widget: "file"
-    default: "assets/content/handbook.pdf"
+    folder: "assets/content/handbook"
     media_library:
       config:
-        multiple: true
+        multiple: false
+    editor:
+      preview: false
+    identifier_field: 'file'
+    fields:
+      - { label: 'PDF File', name: 'file', widget: 'file'}
 
   - name: "sailing_instructions_pdf"
     label: "Sailing Instructions"
-    widget: "file"
-    default: "assets/content/sailing_instructions.pdf"
+    folder: "assets/content/sailing_instructions.pdf"
     media_library:
       config:
-        multiple: true
+        multiple: false
+    editor:
+      preview: false
+    identifier_field: 'file'
+    fields:
+      - { label: 'PDF File', name: 'file', widget: 'file'}
