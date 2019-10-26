@@ -78,6 +78,7 @@ export default {
 }
 
 .ghost-button {
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.5);
   margin-top: 3rem;
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;

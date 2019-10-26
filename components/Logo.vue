@@ -57,6 +57,7 @@ export default Vue.extend({
   margin-left: 15%;
   margin-right: 15%;
   color: #ffffff;
+  text-shadow: 2px 12px 5px rgba(0, 0, 0, 0.5);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;

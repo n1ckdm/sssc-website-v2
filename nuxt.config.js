@@ -61,7 +61,8 @@ export default {
     '@nuxtjs/pwa',
     'nuxt-material-design-icons',
     '@nuxtjs/markdownit',
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/device'
   ],
   markdownit: {
     injected: true

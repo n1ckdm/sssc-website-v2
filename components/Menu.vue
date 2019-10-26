@@ -61,16 +61,16 @@ body {
   background-size: cover;
   min-width: 500px;
   min-height: 200px;
-  color: #fff;
+  color: snow;
   font-family: 'Montserrat';
   height: 100vmax;
 }
 
 .bars {
-  /*   background-color:pink; */
+  color: snow;
   position: absolute;
-  width: 27px;
-  height: 27px;
+  width: 30px;
+  height: 32px;
   top: 30px;
   right: 30px;
   cursor: pointer;
@@ -81,7 +81,7 @@ body {
 .bar {
   width: 100%;
   height: 4px;
-  background-color: #fff;
+  background-color: snow;
   position: absolute;
 }
 
@@ -89,7 +89,7 @@ span::before,
 span::after {
   content: '';
   display: block;
-  background-color: #fff;
+  background-color: snow;
   width: 100%;
   height: 4px;
   position: absolute;
@@ -132,8 +132,9 @@ span::after {
 
 #nav a {
   font-family: 'Quicksand', sans-serif;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
   font-size: 2rem;
-  color: #fff;
+  color: snow;
   text-decoration: none;
   line-height: 70vw;
   position: absolute;

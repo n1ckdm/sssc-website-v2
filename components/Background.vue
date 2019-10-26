@@ -1,7 +1,7 @@
 <template>
   <div>
     <video
-      v-if="usevideo"
+      v-if="usevideo && !$device.isMobile"
       id="video-background"
       :poster="require('~/assets/sc_bg.jpg')"
       playsinline
