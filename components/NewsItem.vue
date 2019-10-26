@@ -1,8 +1,14 @@
 <template>
-  <b-card :title="newsItem.title">
-    <h5>{{ newsItem.date }}</h5>
-    <h6>{{ newsItem.description }}</h6>
-    <div class="markdown" v-html="$md.render(newsItem.body)" />
+  <b-card
+    :title="newsItem.title"
+    :img-src="newsItem.image"
+    tag="article"
+    class="mb-2 card"
+  >
+    <div>
+      <p class="date">{{ date }}</p>
+      <p class="description">{{ newsItem.description }}</p>
+    </div>
   </b-card>
 </template>
 
@@ -17,22 +23,30 @@ const defaultNewsItem = {
 export default {
   props: {
     newsItem: defaultNewsItem
+  },
+  computed: {
+    date() {
+      const date = new Date(this.newsItem.date)
+      const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }
+      return date.toLocaleDateString('en-US', options)
+    }
   }
 }
 </script>
 
 <style>
-.markdown img {
-  width: 400px;
+.card {
+  max-width: 25rem;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
-.card {
-  background-color: #e6e6e6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 5vh;
-  margin: 0;
+.date {
+  font-weight: bold;
 }
 </style>

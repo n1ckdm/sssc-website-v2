@@ -2,7 +2,7 @@
   <div>
     <Background />
     <Menu />
-    <h1>About</h1>
+    <h1>Join</h1>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Background />
+    <Background :usevideo="true" />
     <div class="container">
       <logo />
     </div>
@@ -14,7 +14,7 @@
       </nuxt-link>
     </div>
     <div class="container">
-      <a class="ghost-button" to="/">
+      <a class="ghost-button" href="#">
         Member Area&nbsp;
         <i class="material-icons">vpn_key</i>
       </a>
