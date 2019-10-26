@@ -11,8 +11,8 @@
 - [x] Create news template
 - [x] Finish news page
 - [ ] Migrate news stories (2017 onwards)
-- [ ] Add committee members
-- [ ] Committee members page
+- [x] Add committee members
+- [x] Committee members page
 - [ ] About us page
 - [ ] New members sign up page
 - [ ] Create footer
