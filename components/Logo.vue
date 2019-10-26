@@ -1,6 +1,6 @@
 <template>
   <div class="Logo">
-    {{ title }}
+    {{ $device.isMobile }}
   </div>
 </template>
 
@@ -56,7 +56,7 @@ export default Vue.extend({
   margin-top: 10%;
   margin-left: 15%;
   margin-right: 15%;
-  color: #ffffff;
+  color: snow;
   text-shadow: 2px 12px 5px rgba(0, 0, 0, 0.5);
   -webkit-touch-callout: none;
   -webkit-user-select: none;

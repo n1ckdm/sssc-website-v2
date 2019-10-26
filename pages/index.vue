@@ -8,6 +8,9 @@
       <Menu />
     </div>
     <div class="container">
+      <Flag />
+    </div>
+    <div class="container">
       <nuxt-link class="ghost-button" to="/join">
         Let's Go Sail!&nbsp;
         <i class="material-icons">sentiment_satisfied_alt</i>
@@ -26,12 +29,14 @@
 import Background from '~/components/Background.vue'
 import Logo from '~/components/Logo.vue'
 import Menu from '~/components/Menu.vue'
+import Flag from '~/components/Flag'
 
 export default {
   components: {
     Background,
     Logo,
-    Menu
+    Menu,
+    Flag
   },
   head() {
     return {
