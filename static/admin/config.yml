@@ -62,3 +62,37 @@ collections:
     fields:
       - { label: 'Document Name', name: 'name', widget: 'string' }
       - { label: 'PDF File', name: 'file', widget: 'file' }
+
+  - name: "join"
+    label: "Join"
+    folder: 'assets/content/join'
+    create: true
+    slug: '{{slug}}'
+    format: 'json'
+    identifier_field: 'sub_heading'
+    media_library:
+      config:
+        multiple: false
+    editor:
+      preview: false
+    fields:
+      - { label: 'Sub Heading', name: 'sub_heading', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: "about"
+    label: "About"
+    folder: 'assets/content/about'
+    create: true
+    slug: '{{slug}}'
+    format: 'json'
+    identifier_field: 'sub_heading'
+    media_library:
+      config:
+        multiple: false
+    editor:
+      preview: false
+    fields:
+      - { label: 'Sub Heading', name: 'sub_heading', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
