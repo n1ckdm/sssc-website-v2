@@ -1,42 +1,45 @@
 <template>
-  <div>
+  <b-container fluid>
     <Background :usevideo="true" />
-    <div class="container">
+    <b-row>
       <logo />
-    </div>
-    <div>
+    </b-row>
+    <b-row>
       <Menu />
-    </div>
-    <div class="container">
+    </b-row>
+    <b-row>
       <Flag />
-    </div>
-    <div class="container">
-      <nuxt-link class="ghost-button" to="/join">
+    </b-row>
+    <b-row>
+      <nuxt-link class="ghost-button mx-auto" to="/join">
         Let's Go Sail!&nbsp;
         <i class="material-icons">sentiment_satisfied_alt</i>
       </nuxt-link>
-    </div>
-    <div class="container">
-      <a class="ghost-button" href="#">
+    </b-row>
+    <b-row>
+      <a class="ghost-button mx-auto" href="#">
         Member Area&nbsp;
         <i class="material-icons">vpn_key</i>
       </a>
-    </div>
-  </div>
+    </b-row>
+    <Footer />
+  </b-container>
 </template>
 
 <script>
-import Background from '~/components/Background.vue'
-import Logo from '~/components/Logo.vue'
-import Menu from '~/components/Menu.vue'
+import Background from '~/components/Background'
+import Logo from '~/components/Logo'
+import Menu from '~/components/Menu'
 import Flag from '~/components/Flag'
+import Footer from '~/components/Footer'
 
 export default {
   components: {
     Background,
     Logo,
     Menu,
-    Flag
+    Flag,
+    Footer
   },
   head() {
     return {
@@ -49,6 +52,14 @@ export default {
 </script>
 
 <style>
+body {
+  position: relative;
+  min-width: 500px;
+  min-height: 200px;
+  font-family: 'Quicksand', 'Source Sans Pro';
+  height: 100vmax;
+}
+
 .heading {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -106,8 +117,8 @@ export default {
   padding: 8px;
   font-size: 2rem;
   border-radius: 10px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: snow;
+  border: 1px solid snow;
   text-align: center;
   outline: none;
   text-decoration: none;
@@ -121,7 +132,7 @@ export default {
 }
 .ghost-button:hover,
 .ghost-button:active {
-  background-color: #fff;
+  background-color: snow;
   color: #000;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
   text-decoration: none;

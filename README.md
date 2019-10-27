@@ -15,9 +15,8 @@
 - [x] Committee members page
 - [ ] About us page
 - [ ] New members sign up page
-- [ ] Create footer
-- [ ] Privacy notice
-- [ ] Add social media links
+- [x] Create footer
+- [x] Add social media links
 - [ ] Check mobile integration
 - [ ] Setup Coacha
 

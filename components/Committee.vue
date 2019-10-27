@@ -1,6 +1,6 @@
 <template>
   <b-container fluid>
-    <b-row>
+    <b-row class="committee">
       <b-card
         v-for="(member, index) in committee"
         :key="index"
@@ -25,15 +25,15 @@ export default {
 </script>
 
 <style>
-.card {
-  width: 300px;
+.committee .card {
+  width: 280px;
   overflow: hidden;
   margin: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card img {
+.committee .card img {
   height: auto;
-  width: 300px;
+  width: 280px;
 }
 </style>

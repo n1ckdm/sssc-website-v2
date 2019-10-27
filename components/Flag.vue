@@ -1,18 +1,20 @@
 <template>
-  <svg viewBox="-50 -75 400 300">
-    <polygon class="flag-tri" points="0,0, 300,100 0,200" />
-    <polygon
-      class="flag-mark"
-      points="120,35, 170,52 150,110 170,167 120,183 100,110"
-    />
-  </svg>
+  <div class="mx-auto">
+    <svg viewBox="-50 -75 400 300">
+      <polygon class="flag-tri" points="0,0, 300,100 0,200" />
+      <polygon
+        class="flag-mark"
+        points="120,35, 170,52 150,110 170,167 120,183 100,110"
+      />
+    </svg>
+  </div>
 </template>
 
 <style>
 svg {
   margin-top: -2.5rem;
   width: 310px;
-  height: 210px;
+  height: 100%;
 }
 
 .flag-tri {

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="news-item">
     <b-card
       :title="newsItem.title"
       :img-src="newsItem.image"
@@ -14,8 +14,8 @@
     </b-card>
     <b-modal
       id="modal-xl modal-scrollable"
-      scrollable
       v-model="newsShow"
+      scrollable
       size="xl"
       :title="newsItem.title"
     >
@@ -28,6 +28,7 @@
         <p class="date">{{ date }}</p>
         <p class="description">{{ newsItem.description }}</p>
       </div>
+      <!-- eslint-disable-next-line -->
       <div class="markdown" v-html="$md.render(newsItem.body)"></div>
     </b-modal>
   </div>
@@ -66,7 +67,7 @@ export default {
 </script>
 
 <style>
-.card {
+.news-item .card {
   max-width: 25rem;
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -74,7 +75,7 @@ export default {
   transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.card:hover {
+.news-item .card:hover {
   box-shadow: 0px 15px 30px rgba(32, 32, 75, 0.5),
     0 10px 10px rgba(32, 32, 75, 0.5);
   cursor: pointer;

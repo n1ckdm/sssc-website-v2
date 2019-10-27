@@ -14,6 +14,13 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
+    script: [
+      {
+        type: 'text/javascript',
+        src: 'https://kit.fontawesome.com/164f59bd32.js',
+        crossorigin: 'anonymous'
+      }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
@@ -30,6 +37,11 @@ export default {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap'
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
       }
     ]
   },
@@ -62,7 +74,8 @@ export default {
     'nuxt-material-design-icons',
     '@nuxtjs/markdownit',
     'bootstrap-vue/nuxt',
-    '@nuxtjs/device'
+    '@nuxtjs/device',
+    'nuxt-leaflet'
   ],
   markdownit: {
     injected: true

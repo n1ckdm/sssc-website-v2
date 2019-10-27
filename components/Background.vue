@@ -3,7 +3,6 @@
     <video
       v-if="showVideo"
       id="video-background"
-      :poster="require('~/assets/sc_bg.jpg')"
       playsinline
       autoplay
       loop
@@ -58,7 +57,7 @@ export default {
   top: 50%;
   left: 50%;
   min-width: 100%;
-  min-height: 100%;
+  /* min-height: 100%; */
   width: auto;
   height: auto;
   z-index: -100;

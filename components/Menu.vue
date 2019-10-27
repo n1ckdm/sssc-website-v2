@@ -54,18 +54,6 @@ export default Vue.extend({
   padding: 0;
 }
 
-body {
-  position: relative;
-  background: url('http://thecodeplayer.com/u/m/b1.png') no-repeat center center
-    fixed;
-  background-size: cover;
-  min-width: 500px;
-  min-height: 200px;
-  color: snow;
-  font-family: 'Montserrat';
-  height: 100vmax;
-}
-
 .bars {
   color: snow;
   position: absolute;
