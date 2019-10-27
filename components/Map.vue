@@ -3,7 +3,7 @@
     <b-row class="sub-heading">
       <p class="mx-auto">Finding Us</p>
     </b-row>
-    <div class="map">
+    <div id="map" class="map">
       <client-only>
         <l-map :zoom="15" :center="latLong">
           <l-tile-layer

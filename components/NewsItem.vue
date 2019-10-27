@@ -22,7 +22,7 @@
       <template v-slot:modal-footer>
         <button style="display:none;" />
       </template>
-      <img class="main-img" :src="newsItem.image" />
+      <b-img :src="newsItem.image" fluid-grow :alt="newsItem.title" />
       <hr />
       <div>
         <p class="date">{{ date }}</p>

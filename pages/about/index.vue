@@ -7,6 +7,7 @@
     </b-row>
     <Committee />
     <Map />
+    <Footer />
   </b-container>
 </template>
 
@@ -15,13 +16,15 @@ import Background from '~/components/Background'
 import Menu from '~/components/Menu'
 import Committee from '~/components/Committee'
 import Map from '~/components/Map'
+import Footer from '~/components/Footer'
 
 export default {
   components: {
     Background,
     Menu,
     Committee,
-    Map
+    Map,
+    Footer
   }
 }
 </script>
