@@ -1,5 +1,5 @@
 <template>
-  <div class="Logo">
+  <div class="Logo mx-auto">
     {{ title }}
   </div>
 </template>
@@ -53,7 +53,7 @@ export default Vue.extend({
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 3%;
+  margin-top: 1%;
   margin-left: 15%;
   margin-right: 15%;
   color: snow;

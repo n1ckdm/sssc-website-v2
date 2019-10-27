@@ -56,14 +56,13 @@ export default Vue.extend({
 
 .bars {
   color: snow;
-  position: absolute;
+  position: sticky;
   width: 30px;
   height: 32px;
-  top: 30px;
-  right: 30px;
   cursor: pointer;
   z-index: 101;
   padding-top: 9px;
+  transform: translateY(20px);
 }
 
 .bar {

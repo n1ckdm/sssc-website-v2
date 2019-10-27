@@ -14,7 +14,7 @@
 - [x] Add committee members
 - [x] Committee members page
 - [ ] About us page
-- [ ] New members sign up page
+- [x] New members sign up page
 - [x] Create footer
 - [x] Add social media links
 - [ ] Check mobile integration

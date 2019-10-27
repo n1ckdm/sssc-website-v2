@@ -1,29 +1,29 @@
 <template>
-  <b-container fluid>
-    <Background :usevideo="true" />
-    <b-row>
-      <logo />
-    </b-row>
-    <b-row>
+  <div>
+    <b-container fluid>
       <Menu />
-    </b-row>
-    <b-row>
-      <Flag />
-    </b-row>
-    <b-row>
-      <nuxt-link class="ghost-button mx-auto" to="/join">
-        Let's Go Sail!&nbsp;
-        <i class="material-icons">sentiment_satisfied_alt</i>
-      </nuxt-link>
-    </b-row>
-    <b-row>
-      <a class="ghost-button mx-auto" href="#">
-        Member Area&nbsp;
-        <i class="material-icons">vpn_key</i>
-      </a>
-    </b-row>
+      <Background :usevideo="true" />
+      <b-row>
+        <logo />
+      </b-row>
+      <b-row>
+        <Flag />
+      </b-row>
+      <b-row>
+        <nuxt-link class="ghost-button mx-auto" to="/join">
+          Let's Go Sail!&nbsp;
+          <i class="material-icons">sentiment_satisfied_alt</i>
+        </nuxt-link>
+      </b-row>
+      <b-row>
+        <a class="ghost-button mx-auto" href="#">
+          Member Area&nbsp;
+          <i class="material-icons">vpn_key</i>
+        </a>
+      </b-row>
+    </b-container>
     <Footer />
-  </b-container>
+  </div>
 </template>
 
 <script>
@@ -57,7 +57,6 @@ body {
   min-width: 500px;
   min-height: 200px;
   font-family: 'Quicksand', 'Source Sans Pro';
-  height: 100vmax;
 }
 
 .heading {
@@ -66,6 +65,20 @@ body {
   font-size: 6rem;
   color: snow;
   text-shadow: 4px 8px 5px rgba(0, 0, 0, 0.2);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sub-heading {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 3rem;
+  color: snow;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;

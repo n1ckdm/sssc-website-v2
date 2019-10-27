@@ -1,18 +1,17 @@
 <template>
   <footer>
-    <b-container fluid>
+    <b-container>
       <b-row>
         <b-col class="col">
           <img
             class="coacha-logo"
             :src="require('~/assets/coacha-NFP-award.png')"
           />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Made by&nbsp;
+          &nbsp;&nbsp;Made by&nbsp;
           <a class="me" href="http://nickdmartin.com/">Nick Martin</a>
-          <i class="material-icons">favorite_border</i>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;
           <a href="https://www.facebook.com/groups/SouthShieldsSailingClub/">
-            <i class="fab fa-facebook-square fa-5x"></i>
+            <i class="fab fa-facebook-square fa-3x"></i>
           </a>
         </b-col>
       </b-row>
@@ -27,14 +26,14 @@
 
 .fa-facebook-square {
   color: #4367b2;
-  transform: translateY(30px);
+  transform: translateY(10px);
 }
 
 footer {
   position: fixed;
-  left: 0;
-  bottom: 0;
+  bottom: 5rem;
   width: 100%;
+  height: 2.5rem;
   color: snow;
   font-weight: bold;
   text-align: center;
@@ -55,6 +54,6 @@ footer i {
 }
 
 .coacha-logo {
-  height: 90px;
+  height: 60px;
 }
 </style>

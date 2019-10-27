@@ -31,6 +31,6 @@ export default {
   height: 600px;
   width: auto;
   margin: 0px;
-  overflow: hidden;
+  margin-bottom: 1rem;
 }
 </style>
