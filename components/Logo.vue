@@ -53,7 +53,7 @@ export default Vue.extend({
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 1%;
+  margin-top: -30px;
   margin-left: 15%;
   margin-right: 15%;
   color: snow;

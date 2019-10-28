@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto">
-    <svg viewBox="-50 -75 400 300">
+    <svg viewBox="-100 10 500 200">
       <polygon class="flag-tri" points="0,0, 300,100 0,200" />
       <polygon
         class="flag-mark"
@@ -12,8 +12,7 @@
 
 <style>
 svg {
-  margin-top: -2.5rem;
-  width: 310px;
+  width: calc(250px + 20%);
   height: 100%;
 }
 
