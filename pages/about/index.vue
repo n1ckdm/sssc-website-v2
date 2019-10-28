@@ -6,6 +6,14 @@
       <b-row>
         <p class="heading mx-auto">About</p>
       </b-row>
+      <b-row>
+        <SectionTemplate
+          v-for="(sec, index) in aboutSections"
+          :key="index"
+          :content="sec"
+          :index="index"
+        />
+      </b-row>
       <Committee />
       <Map />
     </b-container>
@@ -17,13 +25,20 @@ import Background from '~/components/Background'
 import Menu from '~/components/Menu'
 import Committee from '~/components/Committee'
 import Map from '~/components/Map'
+import SectionTemplate from '~/components/SectionTemplate'
 
 export default {
   components: {
     Background,
     Menu,
     Committee,
-    Map
+    Map,
+    SectionTemplate
+  },
+  computed: {
+    aboutSections() {
+      return this.$store.state.aboutSections
+    }
   }
 }
 </script>

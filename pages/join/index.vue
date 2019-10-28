@@ -3,10 +3,8 @@
     <Background :makedark="true" />
     <Menu />
     <b-container fluid>
-      <b-row class="heading text-center">
-        <b-col>
-          <p class="mx-auto">Join</p>
-        </b-col>
+      <b-row>
+        <p class="heading mx-auto">Join</p>
       </b-row>
       <b-row>
         <SectionTemplate
@@ -15,6 +13,12 @@
           :content="join"
           :index="index"
         />
+      </b-row>
+      <b-row>
+        <p class="sub-heading mx-auto">Membership Fees</p>
+      </b-row>
+      <b-row>
+        <b-table striped hover :items="membership" :fields="fields"></b-table>
       </b-row>
     </b-container>
   </div>
@@ -31,9 +35,33 @@ export default {
     Menu,
     SectionTemplate
   },
+  data() {
+    return {
+      fields: [
+        {
+          key: 'type',
+          label: 'Membership Type'
+        },
+        {
+          key: 'price_year',
+          label: 'Annual Price',
+          formatter: (value) => `£${value}.00`
+        },
+        {
+          // A virtual column with custom formatter
+          key: 'price_half',
+          label: 'Half Year Price',
+          formatter: (value) => `£${value}.00`
+        }
+      ]
+    }
+  },
   computed: {
     joinSections() {
       return this.$store.state.joinSections
+    },
+    membership() {
+      return this.$store.state.membership
     }
   }
 }
@@ -66,5 +94,10 @@ export default {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.b-table {
+  background-color: rgba(65, 105, 225, 0.664);
+  color: snow;
 }
 </style>

@@ -1,10 +1,7 @@
 <template>
   <b-navbar toggleable="xs" fixed="bottom" variant="faded">
-    <a href="https://www.coacha.co.uk/">
-      <img
-        class="coacha-logo"
-        :src="require('~/assets/coacha-NFP-award.png')"
-      />
+    <a href="https://www.instagram.com/southshieldssailingclub/">
+      <i class="fab fa-instagram fa-3x"></i>
     </a>
     <span>
       Made by <a class="me" href="http://nickdmartin.com/">Nick Martin</a>
@@ -18,6 +15,10 @@
 <style>
 .coacha-logo {
   height: 80px;
+}
+
+i {
+  color: snow;
 }
 
 span {

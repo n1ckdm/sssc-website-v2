@@ -1,7 +1,24 @@
 <template>
-  <b-container fluid>
+  <b-container fluid class="contact">
     <b-row class="sub-heading">
-      <p class="mx-auto">Finding Us</p>
+      <p class="mx-auto">Contact Us</p>
+    </b-row>
+    <b-row>
+      <p>
+        If you need to get in contact, you can do so on social media:
+        <a href="https://www.instagram.com/southshieldssailingclub/">
+          Facebook
+        </a>
+        and
+        <a href="https://www.facebook.com/groups/SouthShieldsSailingClub/">
+          Instagram
+        </a>
+      </p>
+      <p>
+        Alternatively, you can email us: secretary@soshields-sailing.co.uk or
+        sailing@soshields-sailing.co.uk. We also have a telephone number which
+        we'll answer when racing is on: 0191 456 5821
+      </p>
     </b-row>
     <div id="map" class="map">
       <client-only>
@@ -27,6 +44,20 @@ export default {
 </script>
 
 <style>
+.contact p {
+  color: snow;
+}
+
+.contact a {
+  color: snow;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: rgb(206, 206, 206);
+  text-decoration: none;
+}
+
 .map {
   height: 600px;
   width: auto;

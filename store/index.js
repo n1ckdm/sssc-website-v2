@@ -2,7 +2,8 @@ export const state = () => ({
   newsItems: [],
   committee: [],
   joinSections: [],
-  aboutSections: []
+  aboutSections: [],
+  membership: []
 })
 
 export const mutations = {
@@ -17,6 +18,9 @@ export const mutations = {
   },
   setAboutSections(state, list) {
     state.aboutSections = list
+  },
+  setMembership(state, list) {
+    state.membership = list
   }
 }
 
@@ -73,5 +77,18 @@ export const actions = {
       return res
     })
     await commit('setAboutSections', aboutSecs)
+
+    // Get membership
+    const membershipFiles = await require.context(
+      '~/assets/content/membership',
+      false,
+      /\.json$/
+    )
+    const membership = membershipFiles.keys().map((key) => {
+      const res = membershipFiles(key)
+      res.slug = key.slice(2, -5)
+      return res
+    })
+    await commit('setMembership', membership)
   }
 }
