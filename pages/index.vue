@@ -2,7 +2,7 @@
   <div>
     <b-container fluid>
       <Menu />
-      <Background :usevideo="true" />
+      <Background :usevideo="false" />
       <b-row>
         <logo />
       </b-row>
@@ -11,14 +11,12 @@
       </b-row>
       <b-row>
         <nuxt-link class="ghost-button mx-auto" to="/join">
-          Let's Go Sail!&nbsp;
-          <i class="material-icons">sentiment_satisfied_alt</i>
+          Let's Go Sail!
         </nuxt-link>
       </b-row>
       <b-row>
         <a class="ghost-button mx-auto" href="#">
-          Member Area&nbsp;
-          <i class="material-icons">vpn_key</i>
+          Member Area
         </a>
       </b-row>
     </b-container>
@@ -54,7 +52,7 @@ export default {
 <style>
 body {
   position: relative;
-  min-width: 500px;
+  min-width: 300px;
   min-height: 200px;
   font-family: 'Quicksand', 'Source Sans Pro';
 }
@@ -65,20 +63,6 @@ body {
   font-size: 6rem;
   color: snow;
   text-shadow: 4px 8px 5px rgba(0, 0, 0, 0.2);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.sub-heading {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 3rem;
-  color: snow;
-  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -126,7 +110,7 @@ body {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: inline-block;
-  width: 310px;
+  width: 250px;
   padding: 8px;
   font-size: 2rem;
   border-radius: 10px;

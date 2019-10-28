@@ -14,7 +14,7 @@
     <img
       v-else
       id="image-background"
-      :class="{ darker: makeDark }"
+      :class="{ darker: makedark, normal: notdarker }"
       :src="require('~/assets/sc_bg.jpg')"
     />
   </div>
@@ -26,7 +26,7 @@ const makeDarkDefault = false
 export default {
   props: {
     usevideo: useVideoDefault,
-    makeDark: makeDarkDefault
+    makedark: makeDarkDefault
   },
   computed: {
     showVideo() {
@@ -35,6 +35,9 @@ export default {
       } else {
         return false
       }
+    },
+    notdarker() {
+      return !this.$props.makedark
     }
   }
 }
@@ -60,10 +63,6 @@ export default {
   filter: brightness(80%);
 }
 
-.darker {
-  filter: brightness(30%);
-}
-
 #image-background {
   position: fixed;
   top: 20%;
@@ -77,6 +76,13 @@ export default {
   -webkit-transform: translateX(-50%) translateY(-50%);
   background-size: cover;
   background: rgba(0, 0, 0);
+}
+
+.darker {
+  filter: brightness(40%);
+}
+
+.normal {
   filter: brightness(80%);
 }
 </style>

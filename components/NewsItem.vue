@@ -1,29 +1,20 @@
 <template>
-  <div class="news-item">
-    <b-card
-      :title="newsItem.title"
-      :img-src="newsItem.image"
-      tag="article"
-      class="mb-2 card"
-      @click="newsShow = !newsShow"
-    >
-      <div>
-        <p class="date">{{ date }}</p>
-        <p class="description">{{ newsItem.description }}</p>
-      </div>
-    </b-card>
-    <b-modal
-      id="modal-xl modal-scrollable"
-      v-model="newsShow"
-      scrollable
-      size="xl"
-      :title="newsItem.title"
-    >
+  <b-card
+    :title="newsItem.title"
+    :img-src="newsItem.image"
+    tag="article"
+    class="mb-2 ni-card"
+    @click="newsShow = !newsShow"
+  >
+    <div>
+      <p class="date">{{ date }}</p>
+      <p class="description">{{ newsItem.description }}</p>
+    </div>
+    <b-modal v-model="newsShow" :title="newsItem.title">
       <template v-slot:modal-footer>
         <button style="display:none;" />
       </template>
       <b-img :src="newsItem.image" fluid-grow :alt="newsItem.title" />
-      <hr />
       <div>
         <p class="date">{{ date }}</p>
         <p class="description">{{ newsItem.description }}</p>
@@ -31,7 +22,7 @@
       <!-- eslint-disable-next-line -->
       <div class="markdown" v-html="$md.render(newsItem.body)"></div>
     </b-modal>
-  </div>
+  </b-card>
 </template>
 
 <script>
@@ -67,7 +58,7 @@ export default {
 </script>
 
 <style>
-.news-item .card {
+.ni-card {
   max-width: 25rem;
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -75,7 +66,7 @@ export default {
   transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.news-item .card:hover {
+.ni-card:hover {
   box-shadow: 0px 15px 30px rgba(32, 32, 75, 0.5),
     0 10px 10px rgba(32, 32, 75, 0.5);
   cursor: pointer;
@@ -91,6 +82,10 @@ export default {
 
 .main-img {
   width: 400px;
+}
+
+.markdown p {
+  color: black;
 }
 
 .markdown img {
