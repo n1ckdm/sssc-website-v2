@@ -15,7 +15,7 @@
         </nuxt-link>
       </b-row>
       <b-row>
-        <a class="ghost-button mx-auto" href="#">
+        <a class="ghost-button mx-auto" href="https://my.coacha.app/login.php">
           Member Area
         </a>
       </b-row>
