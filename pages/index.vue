@@ -2,7 +2,7 @@
   <div>
     <b-container fluid>
       <Menu />
-      <Background :usevideo="false" />
+      <Background :usevideo="true" />
       <b-row>
         <logo />
       </b-row>

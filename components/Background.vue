@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <video
+    <video
       v-if="showVideo"
       id="video-background"
       playsinline
@@ -16,7 +16,7 @@
       id="image-background"
       :class="{ darker: makedark, normal: notdarker }"
       :src="require('~/assets/sc_bg.jpg')"
-    /> -->
+    />
     <img
       id="image-background"
       :class="{ darker: makedark, normal: notdarker }"
@@ -75,7 +75,7 @@ export default {
   min-width: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
+  z-index: -10;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
