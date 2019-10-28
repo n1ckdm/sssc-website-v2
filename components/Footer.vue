@@ -1,6 +1,11 @@
 <template>
   <b-navbar toggleable="xs" fixed="bottom" variant="faded">
-    <img class="coacha-logo" :src="require('~/assets/coacha-NFP-award.png')" />
+    <a href="https://www.coacha.co.uk/">
+      <img
+        class="coacha-logo"
+        :src="require('~/assets/coacha-NFP-award.png')"
+      />
+    </a>
     <span>
       Made by <a class="me" href="http://nickdmartin.com/">Nick Martin</a>
     </span>
