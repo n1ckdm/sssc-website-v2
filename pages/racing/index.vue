@@ -27,6 +27,7 @@
 <script>
 import Menu from '~/components/Menu.vue'
 import Background from '~/components/Background'
+// http://www.halsraceresults.com/crs/crs.aspx?ClubKey=1111
 
 export default {
   components: {
