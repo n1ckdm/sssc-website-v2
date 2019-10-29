@@ -89,7 +89,7 @@ collections:
     create: true
     slug: '{{year}}-{{slug}}'
     format: 'json'
-    identifier_field: 'year'
+    identifier_field: 'trophy'
     editor:
       preview: false
     fields:
