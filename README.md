@@ -17,7 +17,7 @@
 - [x] New members sign up page
 - [x] Create footer
 - [x] Add social media links
-- [ ] Racing results
+- [x] Racing results
 - [x] Check mobile integration
 - [ ] Setup membership area
 

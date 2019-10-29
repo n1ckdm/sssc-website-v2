@@ -3,7 +3,8 @@ export const state = () => ({
   committee: [],
   joinSections: [],
   aboutSections: [],
-  membership: []
+  membership: [],
+  trophies: []
 })
 
 export const mutations = {
@@ -21,6 +22,9 @@ export const mutations = {
   },
   setMembership(state, list) {
     state.membership = list
+  },
+  setTrophies(state, list) {
+    state.trophies = list
   }
 }
 
@@ -90,5 +94,18 @@ export const actions = {
       return res
     })
     await commit('setMembership', membership)
+
+    // Get trophies
+    const trophyFiles = await require.context(
+      '~/assets/content/racing',
+      false,
+      /\.json$/
+    )
+    const trophies = trophyFiles.keys().map((key) => {
+      const res = trophyFiles(key)
+      res.slug = key.slice(2, -5)
+      return res
+    })
+    await commit('setTrophies', trophies)
   }
 }

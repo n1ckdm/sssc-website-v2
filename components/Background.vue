@@ -33,8 +33,16 @@ export default {
     usevideo: useVideoDefault,
     makedark: makeDarkDefault
   },
+  data() {
+    return {
+      forcevideo: true
+    }
+  },
   computed: {
     showVideo() {
+      if (!this.forcevideo) {
+        return false
+      }
       if (this.$props.usevideo) {
         return this.$props.usevideo && !this.$device.isMobile
       } else {
@@ -57,7 +65,7 @@ export default {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
+  z-index: -10;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -75,7 +83,7 @@ export default {
   min-width: 100%;
   width: auto;
   height: auto;
-  z-index: -10;
+  z-index: -20;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
