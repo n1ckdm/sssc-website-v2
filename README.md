@@ -19,6 +19,7 @@
 - [x] Add social media links
 - [x] Racing results
 - [x] Check mobile integration
+- [ ] Expand history section
 - [ ] Setup membership area
 
 ## Build Setup
