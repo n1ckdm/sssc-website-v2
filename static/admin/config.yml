@@ -115,7 +115,10 @@ collections:
           'Capsize Upturned',
           'Most Improved Youth',
           'Most Improved Sailor',
-          'Novice'
+          'Novice',
+          'July Trophy Day',
+          'Barts Bash',
+          'Last Shout Trophy'
         ]
       }
       - {
@@ -138,7 +141,10 @@ collections:
           'Mast Section',
           'Upturned Wooden OK',
           'Tankard',
-          'Novice Cup'
+          'Novice Cup',
+          'Ship & Royal Trophy',
+          'Mouth of the Tyne',
+          'Jims Jalopy'
         ]
       }
       - { lable: 'Helm', name: 'helm', widget: 'string' }
