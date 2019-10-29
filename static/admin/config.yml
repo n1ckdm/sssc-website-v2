@@ -87,7 +87,7 @@ collections:
     label: 'Trophy Winners'
     folder: 'assets/content/racing'
     create: true
-    slug: '{{year}}-{{slug}}'
+    slug: '{{slug}}'
     format: 'json'
     identifier_field: 'trophy'
     editor:
