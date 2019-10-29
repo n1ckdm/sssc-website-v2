@@ -10,15 +10,16 @@
 - [x] Setup routes
 - [x] Create news template
 - [x] Finish news page
-- [ ] Migrate news stories (2017 onwards)
+- [x] Migrate news stories (2017 onwards)
 - [x] Add committee members
 - [x] Committee members page
-- [ ] About us page
+- [x] About us page
 - [x] New members sign up page
 - [x] Create footer
 - [x] Add social media links
-- [ ] Check mobile integration
-- [ ] Setup Coacha
+- [ ] Racing results
+- [x] Check mobile integration
+- [ ] Setup membership area
 
 ## Build Setup
 

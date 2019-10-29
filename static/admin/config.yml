@@ -82,3 +82,63 @@ collections:
       - { label: 'Sub Heading', name: 'sub_heading', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+collections:
+  - name: 'trophy_winners'
+    label: 'Trophy Winners'
+    folder: 'assets/content/racing'
+    create: true
+    slug: '{{year}}-{{slug}}'
+    format: 'json'
+    identifier_field: 'year'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Year', name: 'year', widget: 'number' }
+      - {
+        label: 'Trophy',
+        name: 'trophy',
+        widget: 'select',
+        options: [
+          'First Race of Season',
+          'Morning (Early)',
+          'Afternoons (Early)',
+          'Morning (Late)',
+          'Afternoons (Late)',
+          'Slow Handicap Wednesday Evening',
+          'Wednesday (Sunrise / Sunset)',
+          'Wednesday Evening Main',
+          'Pursuit Race RNLI',
+          'Seamanship Award',
+          'Special Achievement',
+          'Broken Boat',
+          'Capsize Upturned',
+          'Most Improved Youth',
+          'Most Improved Sailor',
+          'Novice'
+        ]
+      }
+      - {
+        label: 'Race/Prize',
+        name: 'race',
+        widget: 'select',
+        options: [
+          'Ian Drummond',
+          'Cup',
+          'Millenium Shield',
+          'Millenium Plate',
+          'Millenium Salver',
+          'Malcolm Dixon',
+          'Presidents Cup',
+          'Sports Week Cup',
+          'Hilda Nelson',
+          'Port of Tyne Trophy',
+          'Coniston Old Man Tankard',
+          'Mast Section',
+          'Upturned Wooden OK',
+          'Tankard',
+          'Novice Cup'
+        ]
+      }
+      - { lable: 'Helm', name: 'helm', widget: 'string' }
+      - { lable: 'Crew', name: 'crew', widget: 'string', required: false }
