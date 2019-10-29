@@ -83,7 +83,6 @@ collections:
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-collections:
   - name: 'trophy_winners'
     label: 'Trophy Winners'
     folder: 'assets/content/racing'
