@@ -87,13 +87,13 @@ collections:
     label: 'Trophy Winners'
     folder: 'assets/content/racing'
     create: true
-    slug: '{{slug}}'
+    slug: '{{title}}-{{slug}}'
     format: 'json'
     identifier_field: 'trophy'
     editor:
       preview: false
     fields:
-      - { label: 'Year', name: 'year', widget: 'number' }
+      - { label: 'Year', name: 'title', widget: 'number' }
       - {
         label: 'Trophy',
         name: 'trophy',
