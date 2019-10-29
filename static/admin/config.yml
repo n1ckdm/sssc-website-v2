@@ -99,6 +99,8 @@ collections:
         name: 'trophy',
         widget: 'select',
         options: [
+          'Nutcracker',
+          'Icicle',
           'First Race of Season',
           'Morning (Early)',
           'Afternoons (Early)',
@@ -126,6 +128,8 @@ collections:
         name: 'race',
         widget: 'select',
         options: [
+          'Nutcracker shield',
+          'Icicle',
           'Ian Drummond',
           'Cup',
           'Glass Bowl',
