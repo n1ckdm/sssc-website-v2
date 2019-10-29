@@ -107,6 +107,7 @@ collections:
           'Slow Handicap Wednesday Evening',
           'Wednesday (Sunrise / Sunset)',
           'Wednesday Evening Main',
+          'May Day Trophy',
           'Pursuit Race RNLI',
           'Seamanship Award',
           'Special Achievement',
@@ -124,6 +125,7 @@ collections:
         options: [
           'Ian Drummond',
           'Cup',
+          'Glass Bowl',
           'Millenium Shield',
           'Millenium Plate',
           'Millenium Salver',
