@@ -7,6 +7,7 @@
       autoplay
       loop
       muted
+      :style="videoStyle"
     >
       <source type="video/mp4" src="~/assets/sc_bg.mp4" />
       <source type="video/webm" src="~/assets/sc_bg.webm" />
@@ -21,6 +22,7 @@
       id="image-background"
       :class="{ darker: makedark, normal: notdarker }"
       :src="require('~/assets/sc_bg.jpg')"
+      :style="imgStyle"
     />
   </div>
 </template>
@@ -39,6 +41,28 @@ export default {
     }
   },
   computed: {
+    videoStyle() {
+      if (this.showVideo) {
+        return {
+          zIndex: '-10'
+        }
+      } else {
+        return {
+          zIndex: '-100'
+        }
+      }
+    },
+    imgStyle() {
+      if (this.showVideo) {
+        return {
+          zIndex: '-100'
+        }
+      } else {
+        return {
+          zIndex: '-10'
+        }
+      }
+    },
     showVideo() {
       if (!this.forcevideo) {
         return false
@@ -65,7 +89,6 @@ export default {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -10;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -83,7 +106,6 @@ export default {
   min-width: 100%;
   width: auto;
   height: auto;
-  z-index: -20;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
