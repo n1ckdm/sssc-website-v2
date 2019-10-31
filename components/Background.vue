@@ -13,12 +13,6 @@
       <source type="video/webm" src="~/assets/sc_bg.webm" />
     </video>
     <img
-      v-else
-      id="image-background"
-      :class="{ darker: makedark, normal: notdarker }"
-      :src="require('~/assets/sc_bg.jpg')"
-    />
-    <img
       id="image-background"
       :class="{ darker: makedark, normal: notdarker }"
       :src="require('~/assets/sc_bg.jpg')"

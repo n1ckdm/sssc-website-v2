@@ -15,7 +15,10 @@
         </nuxt-link>
       </b-row>
       <b-row>
-        <a class="ghost-button mx-auto" href="#">
+        <a
+          class="ghost-button mx-auto"
+          href="https://www.myclubhouse.co.uk/SSSC"
+        >
           Member Area
         </a>
       </b-row>
