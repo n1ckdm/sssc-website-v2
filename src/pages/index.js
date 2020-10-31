@@ -1,5 +1,12 @@
 import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-export default function Home() {
-  return <div>Hello world!</div>
-}
+
+const IndexPage = () => (
+  <Layout>
+    <SEO title="Home" />
+  </Layout>
+)
+
+export default IndexPage
