@@ -6,27 +6,10 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-transformer-remark`
-    },
-    {
-      resolve: `gatsby-plugin-json-remark`,
-      options: {
-        paths: [
-          `${__dirname}/assets/content/about`
-        ],
-        fieldNameBlacklist: [
-          "id",
-          "children",
-          "parent",
-          "fields",
-          "internal",
-          "path",
-          "template",
-        ]
-      }
-    },
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
@@ -44,7 +27,35 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/assets/content`
+        path: `${__dirname}/assets/content/about`
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/assets/content/committee`
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/assets/content/join`
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/assets/content/membership`
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/assets/content/news`
       },
     },
     {

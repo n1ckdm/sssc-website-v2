@@ -6,150 +6,152 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'news'
-    label: 'News'
-    folder: 'assets/content/news'
+  - name: "news"
+    label: "News"
+    folder: "assets/content/news"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    format: 'json'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    format: "json"
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Main Image', name: 'image', widget: 'image' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Main Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: 'committee'
-    label: 'Committee Member'
-    folder: 'assets/content/committee'
+  - name: "committee"
+    label: "Committee Member"
+    folder: "assets/content/committee"
     create: true
-    slug: '{{slug}}'
-    format: 'json'
-    identifier_field: 'name'
+    slug: "{{slug}}"
+    format: "json"
+    identifier_field: "name"
     editor:
       preview: false
     fields:
-      - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Position', name: 'position', widget: 'string' }
-      - { label: 'Photo', name: 'photo', widget: 'image' }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image" }
 
-  - name: 'membership'
-    label: 'Membership Fees'
-    folder: 'assets/content/membership'
+  - name: "membership"
+    label: "Membership Fees"
+    folder: "assets/content/membership"
     create: true
-    slug: '{{slug}}'
-    format: 'json'
-    identifier_field: 'type'
+    slug: "{{slug}}"
+    format: "json"
+    identifier_field: "type"
     editor:
       preview: false
     fields:
-      - { label: 'Membership Type', name: 'type', widget: 'string' }
-      - { label: 'Annual Price', name: 'price_year', widget: 'number' }
-      - { label: 'Half Year Price', name: 'price_half', widget: 'number' }
+      - { label: "Membership Type", name: "type", widget: "string" }
+      - { label: "Annual Price", name: "price_year", widget: "number" }
+      - { label: "Half Year Price", name: "price_half", widget: "number" }
 
   - name: "join"
     label: "Join"
-    folder: 'assets/content/join'
+    folder: "assets/content/join"
     create: true
-    slug: '{{slug}}'
-    format: 'json'
-    identifier_field: 'sub_heading'
+    slug: "{{slug}}"
+    format: "json"
+    identifier_field: "sub_heading"
     media_library:
       config:
         multiple: false
     editor:
       preview: false
     fields:
-      - { label: 'Sub Heading', name: 'sub_heading', widget: 'string' }
-      - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Sub Heading", name: "sub_heading", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "about"
     label: "About"
-    folder: 'assets/content/about'
+    folder: "assets/content/about"
     create: true
-    slug: '{{slug}}'
-    format: 'json'
-    identifier_field: 'sub_heading'
+    slug: "{{slug}}"
+    format: "json"
+    identifier_field: "sub_heading"
     media_library:
       config:
         multiple: false
     editor:
       preview: false
     fields:
-      - { label: 'Sub Heading', name: 'sub_heading', widget: 'string' }
-      - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Sub Heading", name: "sub_heading", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: 'trophy_winners'
-    label: 'Trophy Winners'
-    folder: 'assets/content/racing'
+  - name: "trophy_winners"
+    label: "Trophy Winners"
+    folder: "assets/content/racing"
     create: true
-    slug: '{{title}}-{{slug}}'
-    format: 'json'
-    identifier_field: 'trophy'
+    slug: "{{title}}-{{slug}}"
+    format: "json"
+    identifier_field: "trophy"
     editor:
       preview: false
     fields:
-      - { label: 'Year', name: 'title', widget: 'number' }
+      - { label: "Year", name: "title", widget: "number" }
       - {
-        label: 'Trophy',
-        name: 'trophy',
-        widget: 'select',
-        options: [
-          'Nutcracker',
-          'Icicle',
-          'First Race of Season',
-          'Morning (Early)',
-          'Afternoons (Early)',
-          'Morning (Late)',
-          'Afternoons (Late)',
-          'Slow Handicap Wednesday Evening',
-          'Wednesday (Sunrise / Sunset)',
-          'Wednesday Evening Main',
-          'May Day Trophy',
-          'Pursuit Race RNLI',
-          'Seamanship Award',
-          'Special Achievement',
-          'Broken Boat',
-          'Capsize',
-          'Most Improved Youth',
-          'Most Improved Sailor',
-          'Novice',
-          'July Trophy Day',
-          'Barts Bash',
-          'Last Shout Trophy'
-        ]
-      }
+          label: "Trophy",
+          name: "trophy",
+          widget: "select",
+          options:
+            [
+              "Nutcracker",
+              "Icicle",
+              "First Race of Season",
+              "Morning (Early)",
+              "Afternoons (Early)",
+              "Morning (Late)",
+              "Afternoons (Late)",
+              "Slow Handicap Wednesday Evening",
+              "Wednesday (Sunrise / Sunset)",
+              "Wednesday Evening Main",
+              "May Day Trophy",
+              "Pursuit Race RNLI",
+              "Seamanship Award",
+              "Special Achievement",
+              "Broken Boat",
+              "Capsize",
+              "Most Improved Youth",
+              "Most Improved Sailor",
+              "Novice",
+              "July Trophy Day",
+              "Barts Bash",
+              "Last Shout Trophy",
+            ],
+        }
       - {
-        label: 'Race/Prize',
-        name: 'race',
-        widget: 'select',
-        options: [
-          'Nutcracker shield',
-          'Icicle',
-          'Ian Drummond',
-          'Cup',
-          'Glass Bowl',
-          'Millenium Shield',
-          'Millenium Plate',
-          'Millenium Salver',
-          'Malcolm Dixon',
-          'Presidents Cup',
-          'Sports Week Cup',
-          'Hilda Nelson',
-          'Port of Tyne Trophy',
-          'Coniston Old Man Tankard',
-          'Mast Section',
-          'Upturned Wooden OK',
-          'Tankard',
-          'Novice Cup',
-          'Ship & Royal Trophy',
-          'Mouth of the Tyne',
-          'Jims Jalopy'
-        ]
-      }
-      - { lable: 'Helm', name: 'helm', widget: 'string' }
-      - { lable: 'Crew', name: 'crew', widget: 'string', required: false }
+          label: "Race/Prize",
+          name: "race",
+          widget: "select",
+          options:
+            [
+              "Nutcracker shield",
+              "Icicle",
+              "Ian Drummond",
+              "Cup",
+              "Glass Bowl",
+              "Millenium Shield",
+              "Millenium Plate",
+              "Millenium Salver",
+              "Malcolm Dixon",
+              "Presidents Cup",
+              "Sports Week Cup",
+              "Hilda Nelson",
+              "Port of Tyne Trophy",
+              "Coniston Old Man Tankard",
+              "Mast Section",
+              "Upturned Wooden OK",
+              "Tankard",
+              "Novice Cup",
+              "Ship & Royal Trophy",
+              "Mouth of the Tyne",
+              "Jims Jalopy",
+            ],
+        }
+      - { lable: "Helm", name: "helm", widget: "string" }
+      - { lable: "Crew", name: "crew", widget: "string", required: false }

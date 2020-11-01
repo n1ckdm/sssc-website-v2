@@ -15,7 +15,10 @@ module.exports = {
         '30': '30',
         '40': '40',
         '50': '50'
-      }
+      },
+      colors: {
+        ssscBlue: '#006bde'
+      },
     },
   },
   variants: {},
