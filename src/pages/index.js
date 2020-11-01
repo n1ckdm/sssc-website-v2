@@ -28,7 +28,7 @@ const IndexPage = () => (
           </button>
         </div>
         <div className="flex">
-          <div className="flex mx-auto mt-2">
+          <div className="flex mx-auto mt-6">
             <a href="https://www.instagram.com/southshieldssailingclub/"><img src={Insta} className="w-10 mx-2" /></a>
             <a href="https://www.facebook.com/groups/SouthShieldsSailingClub/"><img src={FB} className="w-10 mx-2" /></a>
           </div>
