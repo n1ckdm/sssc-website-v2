@@ -6,13 +6,45 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-transformer-remark`
+    },
+    {
+      resolve: `gatsby-plugin-json-remark`,
+      options: {
+        paths: [
+          `${__dirname}/assets/content/about`
+        ],
+        fieldNameBlacklist: [
+          "id",
+          "children",
+          "parent",
+          "fields",
+          "internal",
+          "path",
+          "template",
+        ]
+      }
+    },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms.js`
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/static/img`
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/assets/content`
       },
     },
     {
