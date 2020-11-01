@@ -20,13 +20,13 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="flex flex-col">
-        <main>{children}</main>
-        <footer className="flex justify-center font-body font-light text-gray-900 mt-2">
+        <main className="z-10 mb-40" >{children}</main>
+        <footer className="flex justify-center font-body font-light text-white mt-2">
           <div className="pr-1">
-            © {new Date().getFullYear()}
+            Made by <a href="https://twitter.com/ND_Martin">@n1ckdm</a>
           </div>
           <div className="pl-1">
-            website by <a href="https://twitter.com/ND_Martin">@n1ckdm</a>
+            ©{new Date().getFullYear()}
           </div>
         </footer>
       </div>

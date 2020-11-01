@@ -1,0 +1,29 @@
+@responsive {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.10);
+  }
+
+  .text-shadow-md {
+    text-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 15px 30px rgba(0,0,0,0.11), 0 5px 15px rgba(0,0,0,0.08);
+  }
+
+  .text-shadow-none {
+    text-shadow: none;
+  }
+}
+
+button {
+    @apply text-white border text-lg border-white p-2 w-6/12 mt-4 rounded-lg bg-transparent shadow-lg;
+}
+
+button:hover {
+    @apply bg-white text-black;
+}
+
+h1 {
+    @apply text-white text-6xl text-shadow-lg font-semibold py-4;
+}
