@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-percy`,
     {
       resolve: 'gatsby-plugin-react-leaflet',
       options: {
