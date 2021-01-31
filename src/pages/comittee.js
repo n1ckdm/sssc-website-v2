@@ -34,7 +34,7 @@ const Committee = () => {
       <SEO title="Committee" description="Find out who is on the committee of SSSC" />
       <div className="md:container md:mx-auto">
         <h1 className="pageTitle">Comittee</h1>
-        <p>Minutes for the monthly committee meeting can be accessed <a className="text-ssscBlue" href={ minutesLink } >here</a>.</p>
+        <p className="pl-3">Minutes for the monthly committee meeting can be accessed <a className="text-ssscBlue" href={ minutesLink } >here</a>.</p>
         <div className="md:flex md:flex-wrap pt-1">
           {members.map(m => (
             <ComitteeMember

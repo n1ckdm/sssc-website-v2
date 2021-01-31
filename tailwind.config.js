@@ -19,6 +19,10 @@ module.exports = {
       colors: {
         ssscBlue: '#006bde'
       },
+      height: {
+        mapSm: '400px',
+        mapMd: '800px'
+      }
     },
   },
   variants: {},

@@ -1,10 +1,6 @@
 @tailwind base;
 @tailwind components;
 
-.header {
-    height: auto;
-}
-
 .header nav {
     background: rgba(0, 0, 0, 0.4)
 }
@@ -22,7 +18,7 @@ body {
 }
 
 .pageTitle {
-    @apply text-ssscBlue text-center text-6xl font-semibold my-4;
+    @apply text-ssscBlue text-center text-6xl font-semibold;
 }
 
 .subTitle {

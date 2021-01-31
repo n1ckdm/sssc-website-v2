@@ -3,8 +3,9 @@ import React from "react"
 import Logo from "../../assets/SSSC.svg"
 
 const Header = () => {
+  // relative lg:overflow-hidden
   return (
-    <header className="header relative lg:overflow-hidden">
+    <header className="header relative md:h-36">
       <nav className="md:p-3 py-2 px-3 z-10">
         <div className="container mx-auto flex flex-wrap items-center justify-start">
           <div className="flex-1 flex items-center justify-start self-start">
@@ -30,6 +31,9 @@ const Header = () => {
             </li>
             <li className="md:px-6 py-2 px-3">
               <Link to="/comittee">Committee</Link>
+            </li>
+            <li className="md:px-6 py-2 px-3">
+              <Link to="/find">Find Us</Link>
             </li>
             {/* <li className="md:px-6 py-2 px-3">
               Link to="/">Racing</Link>
