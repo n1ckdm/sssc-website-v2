@@ -22,7 +22,8 @@ export default function NewsItem({ data }) {
       />
       <div className="container mx-auto text-center">
         <p className="pageTitle">{ news.title }</p>
-        <ReactMarkdown className="markdown text-justify">
+        <p className="text-gray-700 font-light italic mb-10">{ news.description }</p>
+        <ReactMarkdown className="markdown text-justify px-4">
           {news.body}
         </ReactMarkdown>
       </div>

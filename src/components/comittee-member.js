@@ -14,7 +14,7 @@ const ComitteeMember = (props) => {
         alt={props.name}
       />
       <p className="font-semibold">{props.name}</p>
-      <p className="text-gray-700 font-light">{props.position}</p>
+      <p className="text-ssscBlue italic font-light">{props.position}</p>
     </div>
   )
 }
