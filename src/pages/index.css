@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+/* @tailwind utilities; */
 
 @responsive {
   .text-shadow {
@@ -19,6 +20,10 @@
   }
 }
 
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
 button {
   @apply text-white border text-lg border-white p-2 w-6/12 mt-4 rounded-lg bg-transparent shadow-lg;
 }
@@ -27,6 +32,6 @@ button:hover {
   @apply bg-white text-black;
 }
 
-h1 {
+.title {
   @apply text-white text-6xl text-shadow-lg font-semibold py-4;
 }

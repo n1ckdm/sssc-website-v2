@@ -7,24 +7,27 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./index.css"
 
-
-
 const IndexPage = () => (
   <>
     <BackgroundVideo />
     <Layout>
       <SEO title="Home" description="Come and find out about sailing with us!" />
       <div className="container mx-auto text-center">
-        <h1 className="hidden md:block">South Shields Sailing Club</h1>
-        <h1 className="md:hidden">SSSC</h1>
+        <h1 className="hidden md:block title">South Shields Sailing Club</h1>
+        <h1 className="md:hidden title">South Shields SC</h1>
         <div>
           <button className="md:w-4/12 md:text-2xl">
-            <Link to="/">{`Let's Go Sail!`}</Link>
+            <Link to="/join">{`Let's Go Sail!`}</Link>
           </button>
         </div>
         <div>
           <button className="md:w-4/12 md:text-2xl">
-            <Link to="/">Member Area</Link>
+            <a href="https://www.myclubhouse.co.uk/sssc">Member Area</a>
+          </button>
+        </div>
+        <div>
+          <button className="md:w-4/12 md:text-2xl">
+            <Link to="/">Events</Link>
           </button>
         </div>
         <div className="flex">
