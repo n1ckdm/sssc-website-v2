@@ -19,9 +19,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="flex flex-col">
-        <main className="z-10 mb-40" >{children}</main>
-        <footer className="flex justify-center font-body font-light text-white mt-2">
+      <div className="h-screen -my-32 flex flex-col place-content-between">
+        <main className="z-10 mt-32" >{children}</main>
+        <footer className="flex justify-center font-body font-light text-black mt-2">
           <div className="pr-1">
             Made by <a href="https://twitter.com/ND_Martin">@n1ckdm</a>
           </div>

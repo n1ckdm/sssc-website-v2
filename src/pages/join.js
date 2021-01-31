@@ -3,10 +3,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PageItem from "../components/page-item"
+import SEO from "../components/seo"
 
 const Join = ({ data }) => {
   return (
     <Layout>
+      <SEO title="Join" description="Want to join? Get started here" />
       <h1 className="pageTitle">Join</h1>
       <div className="container mx-auto px-2 md:px-0">
         {data.allJoinJson.edges.map(({ node }, index) => {

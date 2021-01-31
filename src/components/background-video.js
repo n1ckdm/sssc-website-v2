@@ -6,7 +6,7 @@ import BGVideoWbm from "../../assets/sc_bg.webm"
 const BackgroundVideo = () => {
     return (
         <div className="absolute inset-0 z-negative" >
-            <video className="w-full object-cover h-full hidden md:block" autoPlay="autoplay" loop="loop" muted>
+            <video className="w-full h-full object-cover hidden md:block" autoPlay="autoplay" loop="loop" muted>
                 <source type="video/mp4" src={BGVideoMp4} />
                 <source type="video/webm" src={BGVideoWbm} />
             </video>

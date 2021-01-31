@@ -3,10 +3,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import NewsCard from "../components/news-card"
+import SEO from "../components/seo"
 
 const News = ({ data }) => {
   return (
     <Layout>
+      <SEO title="News" description="Latest news and info from the club" />
       <div className="md:container md:mx-auto">
         <h1 className="pageTitle mb-4">News</h1>
         <div className="md:flex md:flex-wrap md:justify-evenly">
