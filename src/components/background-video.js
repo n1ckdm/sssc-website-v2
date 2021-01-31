@@ -9,7 +9,7 @@ const BackgroundVideo = () => {
   if (isMobile) {
     return (
       <div className="absolute inset-0 z-negative">
-        <img className="w-full object-cover h-full md:hidden" src={BGImg} />
+        <img className="w-full object-cover h-full" src={BGImg} />
       </div>
     )
   } else {

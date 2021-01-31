@@ -9,9 +9,9 @@ import "./index.css"
 
 const IndexPage = () => (
   <>
-    <BackgroundVideo />
     <Layout>
       <SEO title="Home" description="Come and find out about sailing with us!" />
+      <BackgroundVideo />
       <div className="container mx-auto text-center">
         <h1 className="hidden md:block title my-8">South Shields Sailing Club</h1>
         <h1 className="md:hidden title">South Shields SC</h1>
