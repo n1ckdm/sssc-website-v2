@@ -15,6 +15,14 @@ body {
     background-color: #f8fcff;
 }
 
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+    body {
+      /* The hack for Safari */
+      height: -webkit-fill-available;
+    }
+}
+
 .pageTitle {
     @apply text-ssscBlue text-center text-6xl font-semibold;
 }

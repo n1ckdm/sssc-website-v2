@@ -3,9 +3,8 @@ import React from "react"
 import Logo from "../../assets/SSSC.svg"
 
 const Header = () => {
-  // relative lg:overflow-hidden
   return (
-    <header className="header relative">
+    <header className="header">
       <nav className="md:p-3 py-2 px-3 z-10">
         <div className="container mx-auto flex flex-wrap items-center justify-start">
           <div className="flex-1 flex items-center justify-start self-start">
