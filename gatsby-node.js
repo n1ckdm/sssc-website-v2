@@ -11,27 +11,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: slug,
     })
-
-    // if (node.body) {
-    //   const textNode = {
-    //     id: `${node.id}-MarkdownBody`,
-    //     parent: node.id,
-    //     dir: path.resolve("./"),
-    //     internal: {
-    //       type: `${node.internal.type}MarkdownBody`,
-    //       mediaType: "text/markdown",
-    //       content: node.body,
-    //       contentDigest: node.id,
-    //     },
-    //   }
-
-    //   createNode(textNode)
-    //   createNodeField({
-    //     node,
-    //     name: "markdownBody___NODE",
-    //     value: textNode.id,
-    //   })
-    // }
   }
 }
 
