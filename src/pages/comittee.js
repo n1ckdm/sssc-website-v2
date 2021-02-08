@@ -8,6 +8,10 @@ import SEO from "../components/seo"
 const minutesLink = "https://www.myclubhouse.co.uk/SSSC/Documents/Download?categoryID=8&columns=ID%3AA1%2CTitle%3AA0%2CDescription%2CFilename%2CAuthor%2CDate&pageSize=20&selectedPage=0"
 
 const Committee = () => {
+
+  let ordering = {}
+  const sortOrder = ['Commodore','Vice Commodore','Treasurer','Sailing Secretary','Secretary','Committee Member'];
+
   const members = useStaticQuery(graphql`
     query Committee {
       allCommitteeJson {
@@ -27,6 +31,14 @@ const Committee = () => {
     position: e.node.position,
     id: e.node.id,
   }))
+
+  for (var i=0; i<sortOrder.length; i++) {
+    ordering[sortOrder[i]] = i;
+  }
+
+  members.sort((a, b) => {
+    return (ordering[a.position] - ordering[b.position]);
+  });
 
   return (
     <>

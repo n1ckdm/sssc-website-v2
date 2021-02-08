@@ -28,7 +28,7 @@ const IndexPage = () => (
           </div>
           <div>
             <button className="md:w-4/12 md:text-2xl">
-              <Link to="/">Events</Link>
+              <a href="https://www.myclubhouse.co.uk/SSSC/Events/Calendar">Events</a>
             </button>
           </div>
           <div className="flex">
