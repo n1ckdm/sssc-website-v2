@@ -6,3 +6,5 @@ This is the source code for the SSSC website. It was built using some excellent 
 - [x] Gatsby
 - [x] OpenStreeMap
 - [x] Netlify
+
+https://windy.app/widgets
