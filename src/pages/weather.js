@@ -41,7 +41,7 @@ const Weather = () => {
           className="m-4"
           data-windywidget="map"
           data-thememode="white"
-          data-spotid="2556"
+          data-spotid="23206"
           data-appid="a0644d4214355769e7da9e42c27a7919"
           data-newwindbar="true"
           data-spots="true"
@@ -51,7 +51,7 @@ const Weather = () => {
           className="m-4"
           data-windywidget="forecast"
           data-thememode="white"
-          data-spotid="2556"
+          data-spotid="23206"
           data-appid="a0644d4214355769e7da9e42c27a7919"
         ></div>
       </div>
