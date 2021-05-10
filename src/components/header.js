@@ -15,15 +15,15 @@ const Header = () => {
               <img className="h-12" src={Logo} alt="SSSC Logo" />
             </Link>
           </div>
-          <ul
-            data-menu
-            className="md:flex flex-wrap text-white"
-          >
+          <ul data-menu className="md:flex flex-wrap text-white">
             <li className="md:px-6 py-2 px-3">
               <Link to="/join">Join</Link>
             </li>
             <li className="md:px-6 py-2 px-3">
               <Link to="/news">News</Link>
+            </li>
+            <li className="md:px-6 py-2 px-3">
+              <Link to="/weather">Weather</Link>
             </li>
             <li className="md:px-6 py-2 px-3">
               <Link to="/about">About</Link>
