@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `South Shields Sailing Club`,
     description: `Website for South Shields Sailing Club, based in the North East of the UK`,
-    author: `Nick Martin`
+    author: `Nick Martin`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -12,57 +12,64 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-percy`,
     {
-      resolve: 'gatsby-plugin-react-leaflet',
+      resolve: "gatsby-plugin-react-leaflet",
       options: {
-        linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
-      }
+        linkStyles: true, // (default: true) Enable/disable loading stylesheets via CDN
+      },
     },
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
-        modulePath: `${__dirname}/src/cms.js`
-      }
+        modulePath: `${__dirname}/src/cms.js`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/static/img`
+        path: `${__dirname}/static/img`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/assets/content/about`
+        path: `${__dirname}/assets/content/about`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/assets/content/committee`
+        path: `${__dirname}/assets/content/committee`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/assets/content/join`
+        path: `${__dirname}/assets/content/join`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/assets/content/membership`
+        path: `${__dirname}/assets/content/membership`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/assets/content/news`
+        path: `${__dirname}/assets/content/news`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `event_update`,
+        path: `${__dirname}/assets/content/event_update`,
       },
     },
     {
@@ -74,8 +81,8 @@ module.exports = {
         background_colorL: `#4169E1`,
         theme_color: `#4169E1`,
         display: `minimal-ui`,
-        icon: `assets/SSSC.svg`
-      }
-    }
+        icon: `assets/SSSC.svg`,
+      },
+    },
   ],
 }
