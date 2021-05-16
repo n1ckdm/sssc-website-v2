@@ -21,6 +21,20 @@ collections:
       - { label: "Main Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
 
+  - name: "event_udpate"
+    label: "Event Update"
+    folder: "assets/content/event_update"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    format: "json"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "committee"
     label: "Committee Member"
     folder: "assets/content/committee"
