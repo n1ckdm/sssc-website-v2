@@ -33,7 +33,11 @@ const Rs400Nationals = ({ data }) => {
           South Shields Sailing Club are hosting (a year later than planned) the
           RS 400 2021 Noble Marine TridentUK National Championships
         </p>
-        <img className="w-11/12 md:w-2/5 mx-auto" src={TitleImg} />
+        <p className="font-semibold text-lg text-justify mt-6">
+          Latest Updates
+        </p>
+        <div>{updated}</div>
+        {/* <img className="w-11/12 md:w-2/5 mx-auto" src={TitleImg} /> */}
         <p className="font-semibold text-justify text-lg mt-6">General Info</p>
         <p className="text-gray-900 text-justify">
           We are very pleased to be hosting the RS 400 Nationals at South
@@ -95,11 +99,6 @@ const Rs400Nationals = ({ data }) => {
           Racing: 2 races per day, 13.00 start Mon 23rd Aug, 12.00 Tue 24th-Fri
           27th
         </p>
-
-        <p className="font-semibold text-lg text-justify mt-6">
-          Latest Updates
-        </p>
-        <div>{updated}</div>
       </div>
     </Layout>
   )
