@@ -81,23 +81,19 @@ const Rs400Nationals = ({ data }) => {
         </p>
         <img className="w-11/12 md:w-2/5 mx-auto" src={MainImg} />
         <p className="font-semibold text-lg text-justify">
-          Race Programme (provisional)
+          Race Programme
         </p>
         <p className="text-gray-900 text-justify">
-          Optional Coaching: Sun 22nd Aug
-        </p>
-        <p className="text-gray-900 text-justify">
-          Registration: Sun 22nd Aug 16.00-19.00, Mon 23rd Aug 09.00-10.30
+          Coaching: Sun 22nd Aug 13:00
         </p>
         <p className="text-gray-900 text-justify">
           Registration: Sun 22nd Aug 16.00-19.00, Mon 23rd Aug 09.00-10.30
         </p>
         <p className="text-gray-900 text-justify">
-          Briefing: Mon 23rd Aug 11.00
+          Briefing: Mon 23rd Aug 10:30
         </p>
         <p className="text-gray-900 text-justify">
-          Racing: 2 races per day, 13.00 start Mon 23rd Aug, 12.00 Tue 24th-Fri
-          27th
+          Racing: 2 races per day, 13.00 start Mon 23rd Aug, 12.00 Tue 24th-Fri 27th
         </p>
       </div>
     </Layout>
