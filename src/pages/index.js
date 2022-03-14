@@ -33,12 +33,12 @@ const IndexPage = () => (
           </div>
           <div>
             <button className="md:w-2/12 md:text-2xl mr-1">
-              <a href="https://www.myclubhouse.co.uk/SSSC/Client/Documents/TSC_SSSC_-_2021_Program_final.pdf">
+              <a href="https://www.myclubhouse.co.uk/SSSC/Client/Documents/2022_Program.pdf">
                 Duty Rota
               </a>
             </button>
             <button className="md:w-2/12 md:text-2xl ml-1">
-              <a href="https://www.halsail.com/Result/Public/50407">
+              <a href="https://www.halsail.com/Result/Club/3440">
                 Race Results
               </a>
             </button>
