@@ -43,11 +43,6 @@ const IndexPage = () => (
               </a>
             </button>
           </div>
-          <div>
-            <button className="md:w-4/12 md:text-2xl">
-              <Link to="events/streaker-nationals-2022">{`Streaker Nationals`}</Link>
-            </button>
-          </div>
           <div className="flex">
             <div className="flex mx-auto mt-6">
               <a href="https://www.instagram.com/southshieldssailingclub/">
